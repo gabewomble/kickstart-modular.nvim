@@ -1,3 +1,4 @@
+local web_config = { 'prettierd', 'eslint_d' }
 return {
   { -- Autoformat
     'stevearc/conform.nvim',
@@ -14,7 +15,9 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        javascript = { { 'prettierd' } },
+        javascript = web_config,
+        typescript = web_config,
+        typescriptreact = web_config,
       },
     },
   },
