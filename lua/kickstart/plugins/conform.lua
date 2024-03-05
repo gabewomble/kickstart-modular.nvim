@@ -2,6 +2,16 @@ local web_config = { 'prettierd', 'eslint_d' }
 return {
   { -- Autoformat
     'stevearc/conform.nvim',
+    keys = {
+      {
+        '<leader>fb',
+        function()
+          require('conform').format { async = true, lsp_fallback = true }
+        end,
+        mode = 'n',
+        desc = '[F]ormat [B]uffer',
+      },
+    },
     opts = {
       notify_on_error = false,
       format_on_save = {
