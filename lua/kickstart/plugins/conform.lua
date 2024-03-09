@@ -25,6 +25,8 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
+        json = { 'prettierd' },
+        jsonc = { 'prettierd' },
         html = web_config,
         javascript = web_config,
         typescript = web_config,
