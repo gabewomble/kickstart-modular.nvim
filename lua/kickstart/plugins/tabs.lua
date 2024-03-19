@@ -13,6 +13,7 @@ return {
       vim.keymap.set('n', '<A-,>', '<Cmd>BufferPrevious<CR>', { desc = 'Previous Buffer' })
       vim.keymap.set('n', '<A-.>', '<Cmd>BufferNext<CR>', { desc = 'Next Buffer' })
       vim.keymap.set('n', '<leader>x', '<Cmd>BufferClose<CR>', { desc = 'Close Buffer' })
+      vim.keymap.set('n', '<leader>X', '<Cmd>BufferCloseAllButCurrent<CR>', { desc = 'Close all buffers except current' })
     end,
     opts = {
       -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
