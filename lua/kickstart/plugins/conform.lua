@@ -1,6 +1,17 @@
+local web_config = { 'prettierd', 'eslint_d' }
 return {
   { -- Autoformat
     'stevearc/conform.nvim',
+    keys = {
+      {
+        '<leader>fb',
+        function()
+          require('conform').format { async = true, lsp_fallback = true }
+        end,
+        mode = 'n',
+        desc = '[F]ormat [B]uffer',
+      },
+    },
     opts = {
       notify_on_error = false,
       format_on_save = function(bufnr)
@@ -20,7 +31,12 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        -- javascript = { { "prettierd", "prettier" } },
+        json = { 'prettierd' },
+        jsonc = { 'prettierd' },
+        html = web_config,
+        javascript = web_config,
+        typescript = web_config,
+        typescriptreact = web_config,
       },
     },
   },
