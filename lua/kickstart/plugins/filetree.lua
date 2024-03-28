@@ -17,6 +17,10 @@ return {
           enabled = true,
         },
       },
+      window = {
+        position = 'right',
+        width = '100',
+      },
     }
     vim.keymap.set('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
   end,
