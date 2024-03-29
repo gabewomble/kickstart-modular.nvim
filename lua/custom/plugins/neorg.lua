@@ -1,0 +1,26 @@
+-- Will reenable once I've had more time to learn
+return {}
+-- return {
+--   'nvim-neorg/neorg',
+--   dependencies = {
+--     { 'vhyrro/luarocks.nvim', priority = 1000, config = true },
+--   },
+--   lazy = false,
+--   version = '*',
+--   config = function()
+--     require('neorg').setup {
+--       load = {
+--         ['core.defaults'] = {},
+--         ['core.concealer'] = {},
+--         ['core.dirman'] = {
+--           config = {
+--             workspaces = {
+--               notes = '~/notes',
+--             },
+--             default_workspace = 'notes',
+--           },
+--         },
+--       },
+--     }
+--   end,
+-- }
