@@ -17,13 +17,12 @@ return {
         ['core.dirman'] = {
           config = {
             workspaces = {
-              notes = '~/notes',
-              -- workspace to place all neorg learning notes
               neorg = '~/Documents/neorg',
             },
             default_workspace = 'neorg',
           },
         },
+        ['core.summary'] = {},
       },
     }
   end,
