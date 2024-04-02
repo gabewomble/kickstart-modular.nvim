@@ -13,11 +13,16 @@ return {
         flavour = 'macchiato',
         transparent_background = true,
         integrations = {
+          barbar = true,
           cmp = true,
           gitsigns = true,
+          mason = true,
+          noice = true,
           nvimtree = true,
+          telescope = { enabled = true },
           treesitter = true,
           notify = true,
+          which_key = true,
         },
         highlight_overrides = {
           all = function(colors)
