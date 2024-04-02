@@ -1,5 +1,6 @@
 return {
   'nvim-neorg/neorg',
+  build = ':Neorg sync-parsers',
   dependencies = {
     { 'vhyrro/luarocks.nvim', priority = 1000, config = true },
   },
@@ -20,6 +21,14 @@ return {
               neorg = '~/Documents/neorg',
             },
             default_workspace = 'neorg',
+          },
+        },
+        ['core.keybinds'] = {
+          config = {
+            hook = function(keybinds)
+              keybinds.unmap('norg', 'n', '<C-Space>')
+              keybinds.map('norg', 'n', '<C-Space>', "<Cmd>Neotree reveal toggle<CR>")
+            end,
           },
         },
         ['core.summary'] = {},

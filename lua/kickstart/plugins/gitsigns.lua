@@ -18,6 +18,7 @@ return {
     config = function()
       -- https://github.com/lewis6991/gitsigns.nvim?tab=readme-ov-file#keymaps
       require('gitsigns').setup {
+        current_line_blame = true,
         on_attach = function(bufnr)
           local gs = package.loaded.gitsigns
 

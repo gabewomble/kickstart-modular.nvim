@@ -12,6 +12,21 @@ return {
       require('catppuccin').setup {
         flavour = 'macchiato',
         transparent_background = true,
+        integrations = {
+          cmp = true,
+          gitsigns = true,
+          nvimtree = true,
+          treesitter = true,
+          notify = true,
+        },
+        highlight_overrides = {
+          all = function(colors)
+            return {
+              GitSignsCurrentLineBlame = { fg = colors.overlay0 },
+              LineNr = { fg = colors.overlay0 },
+            }
+          end,
+        },
       }
       -- Load the colorscheme here
       vim.cmd.colorscheme 'catppuccin'
