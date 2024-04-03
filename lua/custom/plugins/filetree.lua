@@ -21,6 +21,6 @@ return {
         position = 'current',
       },
     }
-    vim.keymap.set('n', '<C-Space>', '<Cmd>Neotree reveal toggle<CR>', { desc = 'Toggle filetree' })
+    vim.keymap.set('n', '<C-b>', '<Cmd>Neotree reveal toggle<CR>', { desc = 'Toggle filetree' })
   end,
 }
