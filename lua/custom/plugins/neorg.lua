@@ -26,7 +26,7 @@ return {
         ['core.keybinds'] = {
           config = {
             hook = function(keybinds)
-              keybinds.remap('norg', 'n', '<C-Space>', '<Cmd>Neotree reveal toggle<CR>')
+              keybinds.remap('norg', 'n', '<C-b>', '<Cmd>Neotree reveal toggle<CR>')
             end,
           },
         },
