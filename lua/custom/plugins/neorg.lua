@@ -44,5 +44,6 @@ return {
     map('n', '<leader>nr', '<Cmd>Neorg return<CR>', { desc = '[N]eorg [R]eturn' })
     map('n', '<leader>ng', '<Cmd>Neorg generate-workspace-summary<CR>', { desc = '[N]eorg [G]enerate workspace summary' })
     map('n', '<leader>nm', '<Cmd>Neorg inject-metadata<CR>', { desc = '[N]eorg inject [M]etadata' })
+    map('n', '<leader>nt', '<Cmd>Neorg toggle-concealer<CR>', { desc = '[N]eorg [T]oggle concealer' })
   end,
 }
