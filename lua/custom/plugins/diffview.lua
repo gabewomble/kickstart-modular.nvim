@@ -6,16 +6,16 @@ return {
   },
 
   keys = {
-    { '<C-g>', '<CMD>DiffviewOpen<CR>', mode = { 'n', 'v' } },
+    { '<leader>do', '<CMD>DiffviewOpen<CR>', mode = { 'n', 'v' } },
   },
   config = {
     keymaps = {
       view = {
-        ['<C-g>'] = '<CMD>DiffviewClose<CR>',
+        ['<leader>dc'] = '<CMD>DiffviewClose<CR>',
         ['c'] = '<CMD>DiffviewClose<CR><CMD>Neogit commit<CR>',
       },
       file_panel = {
-        ['<C-g>'] = '<CMD>DiffviewClose<CR>',
+        ['<leader>dc'] = '<CMD>DiffviewClose<CR>',
         ['c'] = '<CMD>DiffviewClose<CR><CMD>Neogit commit<CR>',
       },
     },
