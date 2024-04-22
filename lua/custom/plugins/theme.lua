@@ -8,10 +8,28 @@ return {
     name = 'catppuccin',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
+    dependencies = {
+      {
+        'f-person/auto-dark-mode.nvim',
+        config = {
+          update_interval = 1000,
+          set_dark_mode = function()
+            vim.api.nvim_set_option('background', 'dark')
+          end,
+          set_light_mode = function()
+            vim.api.nvim_set_option('background', 'light')
+          end,
+        },
+      },
+    },
     config = function()
       require('catppuccin').setup {
-        flavour = 'macchiato',
-        transparent_background = true,
+        flavour = 'auto',
+        background = {
+          light = 'latte',
+          dark = 'mocha',
+        },
+        -- transparent_background = true,
         integrations = {
           barbar = true,
           cmp = true,

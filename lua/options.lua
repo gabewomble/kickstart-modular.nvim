@@ -61,7 +61,7 @@ vim.opt.scrolloff = 10
 
 vim.opt.foldlevelstart = 99
 
-vim.opt.conceallevel = 1
+-- vim.opt.conceallevel = 1
 vim.opt.cursorline = false
 
 -- vim: ts=2 sts=2 sw=2 et

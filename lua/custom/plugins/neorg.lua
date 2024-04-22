@@ -23,6 +23,7 @@ return {
             default_workspace = 'neorg',
           },
         },
+        ['core.export'] = {},
         ['core.keybinds'] = {
           config = {
             hook = function(keybinds)
