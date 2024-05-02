@@ -1,6 +1,5 @@
 return {
   'nvim-neorg/neorg',
-  build = ':Neorg sync-parsers',
   dependencies = {
     { 'vhyrro/luarocks.nvim', priority = 1000, config = true },
   },
