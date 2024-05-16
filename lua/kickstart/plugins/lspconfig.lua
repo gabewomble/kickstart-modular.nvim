@@ -149,6 +149,7 @@ return {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
+        eslint = {},
         jsonls = {
           filetypes = { 'json', 'jsonc' },
           settings = {

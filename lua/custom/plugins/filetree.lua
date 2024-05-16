@@ -18,7 +18,7 @@ return {
         },
       },
       window = {
-        position = 'current',
+        position = 'float',
       },
     }
     vim.keymap.set('n', '<C-b>', '<Cmd>Neotree reveal toggle<CR>', { desc = 'Toggle filetree' })

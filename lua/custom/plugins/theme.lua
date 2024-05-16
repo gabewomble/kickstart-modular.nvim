@@ -27,7 +27,7 @@ return {
         flavour = 'auto',
         background = {
           light = 'latte',
-          dark = 'mocha',
+          dark = 'macchiato',
         },
         transparent_background = true,
         integrations = {
