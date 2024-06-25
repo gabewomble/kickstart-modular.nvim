@@ -2,13 +2,13 @@ return {
   'sindrets/diffview.nvim',
   dependencies = {
     'nvim-lua/plenary.nvim',
-    { 'NeogitOrg/neogit', config = { disable_commit_confirmation = true } },
+    { 'NeogitOrg/neogit', opts = { disable_commit_confirmation = true } },
   },
 
   keys = {
     { '<leader>do', '<CMD>DiffviewOpen<CR>', mode = { 'n', 'v' } },
   },
-  config = {
+  opts = {
     keymaps = {
       view = {
         ['<leader>dc'] = '<CMD>DiffviewClose<CR>',
