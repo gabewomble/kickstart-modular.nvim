@@ -31,7 +31,7 @@ return {
         flavour = 'auto',
         background = {
           light = 'latte',
-          dark = 'macchiato',
+          dark = 'frappe',
         },
         transparent_background = true,
         integrations = {
