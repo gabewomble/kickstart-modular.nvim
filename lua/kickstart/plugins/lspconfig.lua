@@ -149,6 +149,7 @@ return {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         ts_ls = {},
+        tailwindcss = {},
         eslint = {},
         jsonls = {
           filetypes = { 'json', 'jsonc' },
