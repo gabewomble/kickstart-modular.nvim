@@ -12,13 +12,23 @@ return {
   config = function()
     require('neo-tree').setup {
       close_if_last_window = true,
+      event_handlers = {
+        {
+          event = 'neo_tree_buffer_enter',
+          handler = function(arg)
+            vim.cmd [[
+              setlocal relativenumber
+            ]]
+          end,
+        },
+      },
       filesystem = {
         follow_current_file = {
           enabled = true,
         },
       },
       window = {
-        position = 'float',
+        position = 'left',
       },
     }
     vim.keymap.set('n', '<C-b>', '<Cmd>Neotree reveal toggle<CR>', { desc = 'Toggle filetree' })
